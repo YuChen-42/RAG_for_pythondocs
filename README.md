@@ -1,5 +1,5 @@
 # 题目一：RAG混合检索与评估系统  
-##Python 文档 RAG 问答系统
+## Python 文档 RAG 问答系统
 
 基于 Python 官方文档的可本地运行 RAG（Retrieval-Augmented Generation）问答系统，支持混合检索、Query 改写、重排序、流式 Web UI、Ragas 评估及消融实验。
 
