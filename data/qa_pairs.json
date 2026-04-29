@@ -1,0 +1,102 @@
+[
+  {
+    "question": "How does argparse handle subcommands?",
+    "ground_truth": "argparse supports subcommands via the add_subparsers() method, which creates a sub-parser for each command.",
+    "contexts": ["argparse.html"]
+  },
+  {
+    "question": "What is the difference between asyncio.create_task() and asyncio.ensure_future()?",
+    "ground_truth": "asyncio.create_task() is the preferred way to create tasks, while ensure_future() is a lower-level function that also accepts coroutines.",
+    "contexts": ["asyncio.html"]
+  },
+  {
+    "question": "What are the main container datatypes provided by the collections module?",
+    "ground_truth": "The collections module provides namedtuple, deque, Counter, OrderedDict, defaultdict, and ChainMap.",
+    "contexts": ["collections.html"]
+  },
+  {
+    "question": "How do you convert a string to a datetime object in Python?",
+    "ground_truth": "Use datetime.strptime() to parse a string into a datetime object according to a format string.",
+    "contexts": ["datetime.html"]
+  },
+  {
+    "question": "What is the purpose of functools.lru_cache?",
+    "ground_truth": "functools.lru_cache is a decorator that caches the results of function calls, improving performance for expensive or I/O bound functions.",
+    "contexts": ["functools.html"]
+  },
+  {
+    "question": "What is the difference between io.StringIO and io.BytesIO?",
+    "ground_truth": "io.StringIO is an in-memory stream for text data, while io.BytesIO is an in-memory stream for binary data.",
+    "contexts": ["io.html"]
+  },
+  {
+    "question": "How do you parse a JSON string in Python?",
+    "ground_truth": "Use json.loads() to parse a JSON string into a Python object.",
+    "contexts": ["json.html"]
+  },
+  {
+    "question": "What are the standard logging levels in Python?",
+    "ground_truth": "The standard logging levels are DEBUG, INFO, WARNING, ERROR, and CRITICAL, in increasing order of severity.",
+    "contexts": ["logging.html"]
+  },
+  {
+    "question": "What is the purpose of the os.path module?",
+    "ground_truth": "os.path provides utilities for manipulating paths in a platform-independent way.",
+    "contexts": ["os.html"]
+  },
+  {
+    "question": "What is the difference between pathlib.Path and os.path?",
+    "ground_truth": "pathlib.Path provides an object-oriented interface for filesystem paths, while os.path offers a traditional string-based approach.",
+    "contexts": ["pathlib.html"]
+  },
+  {
+    "question": "How does Python's re module perform pattern matching?",
+    "ground_truth": "The re module uses regular expressions to match patterns in strings, with functions like search, match, findall, and sub.",
+    "contexts": ["re.html"]
+  },
+  {
+    "question": "How do you create a TCP server socket in Python?",
+    "ground_truth": "Use socket.socket(socket.AF_INET, socket.SOCK_STREAM), bind it to an address with bind(), listen for connections with listen(), and accept with accept().",
+    "contexts": ["socket.html"]
+  },
+  {
+    "question": "How do you execute a parameterized query using sqlite3?",
+    "ground_truth": "Use the execute() method with a SQL statement containing ? placeholders and a tuple of values to prevent SQL injection.",
+    "contexts": ["sqlite3.html"]
+  },
+  {
+    "question": "What does sys.argv contain?",
+    "ground_truth": "sys.argv is a list containing the command-line arguments passed to the Python script, with sys.argv[0] being the script name.",
+    "contexts": ["sys.html"]
+  },
+  {
+    "question": "What is the GIL and how does threading work in Python?",
+    "ground_truth": "The Global Interpreter Lock (GIL) allows only one thread to execute Python bytecode at a time, but threading is still useful for I/O-bound tasks.",
+    "contexts": ["threading.html"]
+  },
+  {
+    "question": "What is the purpose of typing.Optional?",
+    "ground_truth": "typing.Optional[X] is equivalent to Union[X, None], indicating that a variable can be of type X or None.",
+    "contexts": ["typing.html"]
+  },
+  {
+    "question": "What is the difference between setUp and tearDown in unittest?",
+    "ground_truth": "setUp is called before each test method to prepare the test fixture, while tearDown is called after each test method to clean up.",
+    "contexts": ["unittest.html"]
+  },
+  {
+    "question": "How do you send a GET request using urllib.request?",
+    "ground_truth": "Use urllib.request.urlopen() with the target URL to send a GET request and read the response.",
+    "contexts": ["urllib.html"]
+  },
+  {
+    "question": "How do you parse an XML file using ElementTree?",
+    "ground_truth": "Use xml.etree.ElementTree.parse() to parse an XML file into an ElementTree object, then use getroot() to access the root element.",
+    "contexts": ["xml.etree.elementtree.html"]
+  },
+  {
+    "question": "How do you extract all files from a zip archive in Python?",
+    "ground_truth": "Use zipfile.ZipFile.extractall() to extract all members from the archive to the current working directory or a specified path.",
+    "contexts": ["zipfile.html"]
+  }
+]
